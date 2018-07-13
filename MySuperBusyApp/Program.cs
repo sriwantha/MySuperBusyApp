@@ -12,7 +12,7 @@ namespace MyBatchApplication
             //start 20 background tasks that will keep the CPU bussy
             for (int i = 0; i < 20; i++)
             {
-                string id = "super busy worker " + i;
+                string id = "super busy worker  " + i;
                 jobs.Add(Task.Factory.StartNew(new Action<object>(Run), id));
             }
             //do not exit, continue forever
